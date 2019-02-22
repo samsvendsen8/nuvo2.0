@@ -1,0 +1,519 @@
+body
+      background: $white
+      font-family: "museo sans"
+
+body, html 
+      transition: all $transition-duration-default ease-in-out
+
+.cart-header
+      padding: 25px
+
+img 
+      display: block 
+ 
+.my-container
+      padding: 0 $px-gutter-base-mobile
+      max-width: 960px
+      margin: 0 auto
+
+      &--remove
+            @media only screen and (max-width: 960px)
+                  padding: 0
+
+      &--checkout
+            @media only screen and (max-width: 960px)
+                  padding: 0
+
+//Cart
+
+.cart-container
+      @media only screen and (max-width: 960px)
+            z-index: $z-index-2
+            padding: 16px
+            position: relative
+            background: white
+
+      .cart__items
+            margin-top: -100px
+            margin-bottom: 130px
+
+.cart
+      grid-area: sidebar
+      background: $white
+      min-width: 330px
+      border: $border-default
+      border-top: 0
+      z-index: $z-index-1
+      overflow-y: auto
+
+      @media only screen and (max-width: 960px)
+            display: none !important
+
+      &__header
+            padding: $px-gutter-large-mobile
+            text-align: center
+            border-bottom: $border-2-light
+
+      &--fixed 
+            position: sticky
+            right: 0
+            height: 100vh
+            top: 0
+
+      ul 
+            width: 100%
+            
+//Tabbar
+
+.tabbar 
+      position: fixed
+      bottom: 0px
+      grid-area: tabbar 
+      background: $white 
+      z-index: $z-index-1
+      height: $tabbar-height
+      width: 100%
+      display: flex
+      box-shadow: 0px -2px 20px 1px #00000014
+
+      @media only screen and (min-width: 960px)
+            display: none !important
+
+      a     
+            display: flex
+            position: relative
+            height: 100%
+            flex: 1
+
+            span 
+                  font-size: 16px
+                  margin: auto
+                  font-weight: 600
+
+            .active
+                  color: $brand-orange
+
+                  &:after
+                        content: ''
+                        left: 50%
+                        bottom: 0
+                        margin-left: -60px
+                        position: absolute
+                        border-radius: $border-radius-max
+                        height: 3px 
+                        width: 120px
+                        background-color: $brand-orange
+
+
+//Category Picker
+
+.category-picker
+      background: $white
+      border-bottom: $border-default
+      overflow-y: auto
+      max-width: 100vw
+
+      &--fixed 
+            position: sticky
+            top: 0
+            z-index: $z-index-1
+            box-shadow: 0px 2px 20px 1px #00000014
+
+      @media only screen and (max-width: 960px)
+            border-top: $border-default
+            box-shadow: 0px 2px 20px 1px #00000014
+
+      ul 
+            li 
+                  margin-right: 34px
+                  position: relative
+                  flex: 0 0 auto
+                  padding: 20px 0
+
+                  a
+                        font-size: 14px
+                        color: $brand-orange
+                        opacity: .7
+                        font-weight: 600
+
+                        &:hover 
+                              opacity: 1
+
+            @media only screen and (max-width: 960px)
+                  li 
+                        margin-right: 20px
+
+                        a 
+                              font-weight: 600
+
+.active-li
+      opacity: 1 !important
+
+      &:after
+            content: ''
+            left: 50%
+            bottom: 10px
+            margin-left: -25px
+            position: absolute
+            border-radius: $border-radius-max
+            height: 3px 
+            width: 50px
+            background-color: $brand-orange
+//Food items
+
+.menu-item
+      display: flex
+      background: $white
+      position: relative
+      border-top: $border-light
+      cursor: pointer
+
+      &:last-of-type
+            border-bottom: $border-light
+
+      @media only screen and (max-width: 960px)
+            box-shadow: none
+            margin-bottom: 0px
+
+            &:nth-of-type(odd)
+                  margin-right: 0px 
+
+      &--no-image 
+            border-top: $border-2-light 
+            overflow: hidden
+            min-height: 90px
+
+            &:first-of-type
+                  border-top: 0
+            
+            &:last-of-type
+                  border-bottom: $border-light
+
+      &--menu
+            @media only screen and (min-width: $mobile-break-point)
+                  overflow: hidden
+                  transition: box-shadow $transition-duration-default ease-in-out, transform $transition-duration-default ease-in-out
+                  border-radius: $border-radius-default
+                  box-shadow: $box-shadow-default
+                  margin-bottom: $px-gutter-base-mobile
+
+                  &:nth-of-type(odd)
+                        margin-right: 20px
+
+                  &:hover 
+                        box-shadow: 0px 7px 17px #00000030
+                        transform: translateY(-1px)
+
+                        .menu-item__image
+                              &:before
+                                    transition: opacity $transition-duration-default ease-in-out
+                                    content: ''
+                                    position: absolute
+                                    width: 100%
+                                    height: 100%
+                                    background-color: rgba(0,0,0, .5)
+                                    opacity: 1
+                                    z-index: $z-index-2
+
+                        .btn__menu-item-overlay
+                              opacity: 1
+                              transform: translateY(52px) 
+                              z-index: $z-index-1
+
+                              &--no-image
+                                 transform: translateY(34px) !important   
+                                    
+            &--no-image
+                  &:before
+                        transition: opacity $transition-duration-default ease-in-out
+                        background-color: rgba(0,0,0, .5)
+                        position: absolute
+                        opacity: 0
+                        width: 100%
+                        height: 100%
+                        content: ''
+                        z-index: $z-index-1
+
+                  &:hover
+                        border-bottom: 0
+
+                        &:before
+                              transition: opacity $transition-duration-default ease-in-out
+                              content: ''
+                              position: absolute
+                              width: 100%
+                              height: 100%
+                              background-color: rgba(0,0,0, .5)
+                              opacity: 1
+                              z-index: $z-index-1
+
+                        .btn__menu-item-overlay
+                              opacity: 1
+                              transform: translateY(52px) 
+                              z-index: $z-index-0
+
+
+      &--cart
+            border-radius: 14px
+            margin-bottom: $px-gutter-base-mobile
+            margin-bottom: $px-gutter-base-mobile
+            box-shadow: 0px -2px 20px 1px #00000014
+            border: none
+
+            &:last-of-type
+                  margin-bottom: 72px
+
+      &--cart-desktop
+            &:hover 
+                  .hidden-options
+                        transform: translateX(0px)
+
+                  .menu-item__content, .menu-item__price
+                        transform: translateX(-60px)
+      &__image 
+            flex: 4
+            height: 140px
+            position: relative
+
+            &:before
+                  transition: opacity $transition-duration-default ease-in-out
+                  background-color: rgba(0,0,0, .5)
+                  position: absolute
+                  opacity: 0
+                  width: 100%
+                  height: 100%
+                  content: ''
+
+            @media only screen and (max-width: 960px)
+                  padding: 20px 20px 20px 0
+
+            img 
+                  background-size: cover 
+                  height: 100%
+                  object-fit: cover
+                  float: right
+
+      &__content
+            transition: transform $transition-duration-default ease-in-out
+            flex: 6
+            display: flex
+            flex-direction: column
+            padding: $px-gutter-base-mobile
+
+            p 
+                  -webkit-line-clamp: 3
+                  -webkit-box-orient: vertical
+                  text-overflow: ellipsis
+                  display: -webkit-box
+                  overflow: hidden
+                  
+
+            h5 
+                  margin-bottom: 4px
+
+      &__price
+            transition: transform $transition-duration-default ease-in-out
+            padding: $px-gutter-base-mobile
+            flex: 1
+
+//Menu item options
+
+.label-section
+      display: flex
+      flex-direction: column 
+      margin: 30px $px-gutter-base-mobile 0 $px-gutter-base-mobile
+
+      &--border
+                  border-bottom: $border-light
+
+      &--full-width
+            margin: 30px 0 0 0
+
+      &--checkout
+            @media only screen and (min-width: 960px)
+                  flex-direction: row
+                  padding: 30px 0 0 0
+                  border-top: $border-default
+
+
+.header
+      background-color: $white
+      padding: $px-gutter-base-mobile $px-gutter-large-mobile
+
+      &--elevated
+            box-shadow: 0px 2px 20px 1px #00000014
+
+.checkout-content
+      display: inline-block
+      width: 100%
+      background: $background-grey
+
+      @media only screen and (min-width: 960px)
+            background: $white 
+            box-shadow: $box-shadow-default
+            padding: $px-gutter-base
+            position: relative
+            top: -160px
+            z-index: $z-index-1
+.payment
+      flex: 4
+
+.payment-choice
+      display: inline-block
+      background: $background-grey
+      border: $border-default
+      margin: 0 0 $px-gutter-large-mobile $px-gutter-base-mobile
+      border-radius: 2px
+
+      .radio 
+            padding: 10px $px-gutter-base-mobile 10px $px-gutter-base-mobile
+
+.add-card
+      display: none
+
+      @media only screen and (max-width: 960px)
+            flex-direction: column
+      
+
+.show 
+      display: flex
+
+.button-widget 
+      border-top: $border-light
+      border-bottom: $border-light
+      background: $white
+      display: flex
+      padding: $px-gutter-base-mobile
+
+      h5 
+            flex: 1 
+
+      &__icon
+            flex: 15px 0 0 
+
+.white-bg-container
+      padding: $px-gutter-base-mobile
+      background: $white
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-column-gap: 20px
+      flex-direction: column
+
+      @media only screen and (max-width: 960px)
+            grid-template-columns: 1fr
+
+      &--full-width
+            padding: 0
+
+      &--checkout 
+            @media only screen and (min-width: 960px)
+                  flex: 4
+                  padding-top: 0px
+
+      &--single-column 
+            grid-template-columns: 1fr
+
+
+
+.order-totals
+      background: $white
+      padding: $px-gutter-base-mobile
+      border-top: $border-light
+
+      &__row
+            display: flex
+            justify-content: space-between
+
+            &--subheader
+                  color: $subheader
+
+            &--header
+                  padding-top: $px-gutter-base-mobile
+                  margin-top: $px-gutter-base-mobile
+
+                  h5 
+                        font-weight: 600
+
+.hidden-options
+      transition: transform $transition-duration-default ease-in-out
+      transform: translateX(60px)
+      display: flex
+      width: 60px
+      flex-direction: column
+      background-color: #f8f8f8
+      position: absolute
+      height: 100%
+      right: 0px
+      border-left: $border-2-light
+
+      &__delete
+            
+            border-bottom: 2px solid rgba(0, 0, 0, .075)
+
+            img 
+                  background-color: #ff5722
+                  padding: 5px
+      
+      &__edit
+
+            img 
+                  background-color: #2196f3
+                  padding: 8px
+
+      &__delete, &__edit
+            transition: opacity $transition-duration-default ease-in-out
+            opacity: .8
+            flex: 1
+            display: flex
+            align-self: center
+            align-items: center
+
+            &:hover
+                  opacity: 1
+
+            img 
+                  position: relative
+                  transition: background-color $transition-duration-default ease-in-out
+                  height: 30px
+                  border-radius: $border-radius-default
+                  width: 30px
+                  
+.footer 
+      background: $brand-dark-grey
+      display: flex
+
+      &__item
+            flex: 1
+            flex-direction: column
+            display: flex
+            padding: 0px 15px 0px 15px
+
+            .big-logo
+                  width: 180px
+
+            span 
+                  color: $brand-red
+                  font-size: 18px
+
+.order-summary-container
+      flex-direction: column
+      flex: 4
+
+      .menu-item
+            padding-top: 0px
+
+            &__price
+                  text-align: right
+
+            &__content
+
+            @media only screen and (min-width: 960px)
+                  &:first-of-type
+                        min-height: 0px
+
+                        .menu-item__content
+                              min-height: 0px
+                              padding-top: 0px
+
+                        .menu-item__price
+                              padding-top: 0px

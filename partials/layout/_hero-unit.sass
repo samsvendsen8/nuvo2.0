@@ -1,0 +1,39 @@
+.hero-unit
+      height: 175px
+      width: 100%
+      position: relative
+
+      &--checkout
+            background:
+                  size: cover
+                  image: url('../img/map.png')
+
+      &--cart
+            clip-path: ellipse(100% 87% at 50% 10%)
+            background:
+                  size: cover
+                  image: url('../img/hero-image.png')
+
+      &--menu
+            display: flex
+            height: 280px
+            align-items: center
+            background:
+                  size: cover
+                  image: url('../img/hero-image-desktop.png')
+
+            @media only screen and (max-width: 960px)
+                  height: 175px
+                  background:
+                        size: cover
+                        image: url('../img/hero-image.png')
+
+      &--menu, &--cart 
+            &:after
+                  background-color: $white
+                  opacity: .3
+                  content: ''
+                  height: 100%
+                  width: 100%
+                  position: absolute
+                  top: 0px

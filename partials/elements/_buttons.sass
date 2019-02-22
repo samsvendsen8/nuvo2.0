@@ -1,0 +1,90 @@
+.sticky-button
+      position: fixed
+      bottom: 0px
+      background: $white 
+      height: auto
+      z-index: $z-index-1
+      width: 100%
+      padding: 10px
+      box-shadow: 0px -2px 20px 1px #00000014
+
+      &--modal 
+            @media only screen and (min-width: 960px)
+                  width: 500px
+                  bottom: 20px
+
+.button-container
+      padding: $px-gutter-base-mobile
+      display: flex
+
+      &--cart 
+            bottom: $tabbar-height
+            padding:  $px-gutter-base-mobile 60px 
+            width: 100%
+            position: fixed
+            z-index: $z-index-1
+
+      &--cart-desktop
+            padding-bottom: 0
+
+.btn
+      border: none
+      text-align: center
+      padding: 14px 20px
+      font-size: 20px
+      font-weight: 600
+      font-family: "museo sans"
+      cursor: pointer
+
+      &:hover
+            color: $white
+            
+
+
+      &__menu-item-overlay
+            transition: transform $transition-duration-default ease-in-out, opacity $transition-duration-default ease-in-out
+            position: absolute
+            transform: translateY(150px)
+            opacity: 0
+            background: $brand-orange
+            color: $white
+            border-radius: $border-radius-default
+            padding: 8px 14px
+            font-size: 14px
+            left: 50%
+            margin-left: -45px
+
+      &--checkout
+            width: 100%
+            padding: 0px
+            display: flex 
+            background-color: $brand-orange
+            color: $white 
+            border-radius: 28px
+            box-shadow: 0px -2px 20px 1px #00000014
+
+      &--cta 
+            transition: transform $transition-duration-default ease-in-out, box-shadow $transition-duration-default ease-in-out
+            width: 100%
+            background: $brand-orange
+            transform: translateY(0)
+            border-radius: 10px
+            color: $white 
+
+            &--cart-desktop
+                  padding: 10px 20px
+
+            &:hover 
+                  transform: translateY(-2px)
+                  box-shadow: 0px 24px 20px -20px #ff852099
+
+      &__price
+            flex: 1
+            padding: 16px 20px
+            background-color: #F87509
+            border-top-left-radius: 28px
+            border-bottom-left-radius: 28px
+
+      &__copy
+            padding: 16px 20px
+            flex: 4

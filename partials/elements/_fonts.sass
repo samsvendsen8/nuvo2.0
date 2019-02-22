@@ -1,0 +1,76 @@
+.title
+    font-family: brothers, sans-serif
+
+h1 
+      color: $white
+      font-weight: 900
+      font-size: 50px
+      text-shadow: 1px 1px 1px black
+      font-family: "brothers"
+
+h2 
+      font-size: 24px
+      font-family: "brothers"
+      color: $header-dark
+
+h3 
+      color: $header-dark
+      font-size: 22px
+      font-weight: 600
+
+h4
+      color: $white 
+      font-family: "brothers"
+      font-size: 20px
+      margin-bottom: 20px 
+      
+h5 
+      color: $header-dark
+      font-size: 16px
+      font-weight: 600
+
+.price
+      font-size: 14px
+      color: $brand-orange
+
+      &--menu 
+            @media only screen and (min-width: 960px)
+                  z-index: $z-index-2
+                  position: absolute
+                  background: $white
+                  padding: 4px 10px
+                  top: 10px
+                  font-weight: 600
+                  box-shadow: $box-shadow-default
+                  right: 10px
+                  border-radius: $border-radius-default
+
+.subheader
+      color: $subheader
+      font-size: 14px
+
+.label 
+      margin-bottom: 8px !important
+
+      &--light
+            color: $light-grey
+
+      &--subheader
+            font-weight: 500
+
+      &--checkout 
+            flex: 1
+
+.link 
+      color: $link-blue 
+      text-decoration: underline
+
+.cat-header
+      @media only screen and (min-width: 960px)
+            margin-top: 56px
+            margin-bottom: 24px
+
+      @media only screen and (max-width: 960px)
+            text-align: center
+            padding: 35px 0px 33px 0
+            background: $white

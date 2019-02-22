@@ -1,0 +1,1 @@
+$(function(){$(".modal").click(function(){$(this).addClass("is-active")})});

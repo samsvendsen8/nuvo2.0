@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jze1edm.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <div class="back-btn">
+          <a href="index.html">
+            <img src="img/back-arrow.png" alt="">
+          </a>
+        </div>
+        <a class="logo"> 
+          <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32" height="32">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-default">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar-default" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="" class="nabar-link">Menu</a>
+            <div class="navbar-dropdown">
+              <a href="" class="navbar-item">
+                  Dining Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Beverage Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Catering Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Happy Hour Menu
+                </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a href="" class="nabar-link">Locations</a>
+            <div class="navbar-dropdown">
+              <a href="" class="navbar-item">
+                  Orlando, FL
+                </a>
+              <a href="" class="navbar-item">
+                  Jacksonville, FL
+                </a>
+              <a href="" class="navbar-item">
+                  St. Petersburg, FL
+                </a>
+              <a href="" class="navbar-item">
+                  Neptune Beach, FL
+                </a>
+              <a href="" class="navbar-item">
+                  Windermere, FL
+                </a>
+              <a href="" class="navbar-item">
+                  Atlanta, GA
+                </a>
+              <a href="" class="navbar-item">
+                  Delray Beach, FL
+                </a>
+              <a href="" class="navbar-item">
+                  Charlotte, NC
+                </a>
+            </div>
+          </div>
+          <a class="navbar-item">Our Story</a>
+          <a class="navbar-item">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="grid-checkout">
+    <div class="checkout"> 
+      <div class="hero-unit hero-unit--menu"></div>
+      <div class="my-container my-container--checkout">
+        <div class="checkout-content">
+          <div class="header header--elevated has-text-centered">
+            <span class="label label--light">The Tiger Salad</span>
+            <h5>1103 N Mills Ave, Orlando, FL 32803</h5>
+          </div>
+          <div class="label-section label-section--checkout label-section--full-width">
+            <span class="label label--checkout has-text-centered--mobile">Payment</span>
+            <div class="payment">
+              <!-- <div class="button-widget is-hidden-desktop">
+                <span class="button-widget__icon">
+                  <img src="img/close-icon.svg" alt="">
+                </span>
+                <h5>Tap to Add Payment</h5>
+                <span class="button-widget__icon">
+                  <img src="img/close-icon.svg" alt="">
+                </span>
+              </div> -->
+              <div class="payment-choice payment-choice--cc">
+                <label class="radio radio--cc">
+                  <input type="radio" name="answer">
+                  Credit Card
+                </label>  
+              </div>
+              <div class="payment-choice">
+                <label class="radio">
+                  <input type="radio" name="answer">
+                  Cash
+                </label>  
+              </div>
+              <div class="add-card">
+                <div class="white-bg-container white-bg-container--checkout white-bg-container--single-column">
+                  <span class="label label--checkout has-text-centered--mobile">Credit Card Info</span>
+                  <span class="input-custom">
+                    <input type="text" class="input-custom__field" name="ccNumber">
+                    <label for="ccNumber" class="input-custom__label">
+                      <span class="input-custom__label-content">Name on Card</span>
+                    </label>
+                  </span>
+                  <div class="two-inputs two-inputs--flex">
+                    <span class="input-custom flex-1 margin-right-20">
+                      <input type="text" class="input-custom__field" name="ccNumber">
+                      <label for="ccNumber" class="input-custom__label">
+                        <span class="input-custom__label-content">Card Number</span>
+                      </label>
+                    </span>
+                    <span class="input-custom input-custom--small">
+                      <input type="text" class="input-custom__field" name="ccNumber">
+                      <label for="ccNumber" class="input-custom__label">
+                        <span class="input-custom__label-content">CVV</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div class="two-inputs ">
+                    <div class="select select--options select--large">
+                      <select>
+                        <option>MM</option>
+                        <option>Chicken</option>
+                        <option>Steak</option>
+                        <option>Beef</option>
+                      </select>
+                    </div>
+                    <div class="select select--options select--large">
+                      <select>
+                        <option>YYYY</option>
+                        <option>Chicken</option>
+                        <option>Steak</option>
+                        <option>Beef</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="white-bg-container white-bg-container--checkout white-bg-container--single-column">
+                  <span class="label label--checkout has-text-centered--mobile">Billing Address</span>
+                  <span class="input-custom">
+                    <input type="text" class="input-custom__field" name="ccNumber">
+                    <label for="ccNumber" class="input-custom__label">
+                      <span class="input-custom__label-content">First Name</span>
+                    </label>
+                  </span>
+                  <span class="input-custom">
+                    <input type="text" class="input-custom__field" name="ccNumber">
+                    <label for="ccNumber" class="input-custom__label">
+                      <span class="input-custom__label-content">Last Name</span>
+                    </label>
+                  </span>
+                  <span class="input-custom">
+                    <input type="text" class="input-custom__field" name="ccNumber">
+                    <label for="ccNumber" class="input-custom__label">
+                      <span class="input-custom__label-content">Email</span>
+                    </label>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="label-section label-section--checkout label-section--full-width">
+            <span class="label label--checkout has-text-centered--mobile">Guest Checkout</span>
+            <div class="white-bg-container white-bg-container--checkout">
+              <span class="input-custom">
+                <input type="text" class="input-custom__field" name="ccNumber">
+                <label for="ccNumber" class="input-custom__label">
+                  <span class="input-custom__label-content">First Name</span>
+                </label>
+              </span>
+              <span class="input-custom">
+                <input type="text" class="input-custom__field" name="ccNumber">
+                <label for="ccNumber" class="input-custom__label">
+                  <span class="input-custom__label-content">Last Name</span>
+                </label>
+              </span>
+              <span class="input-custom">
+                <input type="text" class="input-custom__field" name="ccNumber">
+                <label for="ccNumber" class="input-custom__label">
+                  <span class="input-custom__label-content">Email</span>
+                </label>
+              </span>
+              <span class="input-custom">
+                <input type="text" class="input-custom__field" name="ccNumber">
+                <label for="ccNumber" class="input-custom__label">
+                  <span class="input-custom__label-content">Phone Number</span>
+                </label>
+              </span>
+              <label class="checkbox">
+                <input type="checkbox">
+                Create Account
+              </label>
+            </div>
+          </div>
+          <div class="label-section label-section--checkout label-section--full-width">
+            <span class="label label--checkout has-text-centered--mobile ">Pick up Time</span>
+            <div class="white-bg-container white-bg-container--checkout">
+              <div class="select select--options select--large margin-bottom-0">
+                  <select>
+                    <option>12:45 PM</option>
+                    <option>Chicken</option>
+                    <option>Steak</option>
+                    <option>Beef</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+          <div class="label-section label-section--checkout label-section--full-width ">
+            <span class="label label--checkout has-text-centered--mobile ">Order Summery</span>
+            <div class="order-summary-container">
+              <div class="menu-item menu-item--no-image">
+                <div class="menu-item__content">
+                  <h5>The Tiger Salad</h5>
+                  <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                </div>
+                <div class="menu-item__price">
+                  <span class="price">$5.99</span>
+                </div>
+              </div>
+              <div class="menu-item menu-item--no-image">
+                <div class="menu-item__content">
+                  <h5>The Tiger Salad</h5>
+                  <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                </div>
+                <div class="menu-item__price">
+                  <span class="price">$5.99</span>
+                </div>
+              </div>
+              <div class="order-totals">
+                <div class="order-totals__row order-totals__row--subheader">
+                  <span>Subtotal</span>
+                  <span>$32.65</span>
+                </div>
+                <div class="order-totals__row order-totals__row--subheader">
+                  <span>Tax</span>
+                  <span>$2.34</span>
+                </div>
+                <div class="order-totals__row order-totals__row--header border-top">
+                  <h5>Total</h5>
+                  <h5>$34.99</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn--cta">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart is-flex cart--fixed">
+      <ul>
+        <div class="cart__header">
+          <h3>Your Cart</h3>
+        </div>
+        <div class="cart-contents">
+          <div class="menu-item menu-item--no-image menu-item--cart-desktop">
+            <div class="menu-item__content">
+              <h5>The Tiger Salad</h5>
+              <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+            </div>
+            <div class="menu-item__price">
+              <span class="price">$5.99</span>
+            </div>
+            <div class="hidden-options">
+              <div class="hidden-options__delete">
+                <img src="img/icon-delete.png" alt="">
+              </div>
+              <div class="hidden-options__edit">
+                <img src="img/edit-icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="menu-item menu-item--no-image menu-item--cart-desktop">
+            <div class="menu-item__content">
+              <h5>The Tiger Salad</h5>
+              <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+            </div>
+            <div class="menu-item__price">
+              <span class="price">$5.99</span>
+            </div>
+            <div class="hidden-options">
+              <div class="hidden-options__delete">
+                <img src="img/icon-delete.png" alt="">
+              </div>
+              <div class="hidden-options__edit">
+                <img src="img/edit-icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-totals">
+          <div class="order-totals__row order-totals__row--subheader">
+            <span>Subtotal</span>
+            <span>$32.65</span>
+          </div>
+          <div class="order-totals__row order-totals__row--subheader">
+            <span>Tax</span>
+            <span>$2.34</span>
+          </div>
+          <div class="order-totals__row order-totals__row--header border-top">
+            <h5>Total</h5>
+            <h5>$34.99</h5>
+          </div>
+        </div>
+        <div class="button-container">
+          <a href="checkout.html" class="btn btn--cta">Place Order</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

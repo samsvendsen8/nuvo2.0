@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hea5ykq.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <!-- <div class="back-btn">
+              <a href="index.html">
+                <img src="img/back-arrow.png" alt="">
+              </a>
+            </div> -->
+            <a class="logo">
+                <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32" height="32">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-default">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar-default" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item is-hoverable">
+                    <a href="" class="nabar-link">Menu</a>
+                    <div class="navbar-dropdown">
+                        <a href="" class="navbar-item">
+                            Dining Menu
+                        </a>
+                        <a href="" class="navbar-item">
+                            Beverage Menu
+                        </a>
+                        <a href="" class="navbar-item">
+                            Catering Menu
+                        </a>
+                        <a href="" class="navbar-item">
+                            Happy Hour Menu
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item is-hoverable">
+                    <a href="" class="nabar-link">Locations</a>
+                    <div class="navbar-dropdown">
+                        <a href="" class="navbar-item">
+                            Orlando, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            Jacksonville, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            St. Petersburg, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            Neptune Beach, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            Windermere, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            Atlanta, GA
+                        </a>
+                        <a href="" class="navbar-item">
+                            Delray Beach, FL
+                        </a>
+                        <a href="" class="navbar-item">
+                            Charlotte, NC
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-item">Our Story</a>
+                <a class="navbar-item">Our Story</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="grid-container">
+    <div class="hero-unit hero-unit--menu">
+        <h1 class="has-text-centered flex--v-center">Order Online</h1>
+    </div>
+    <section class="main-content-grid">
+        <div class="category-picker">
+            <ul class="is-flex my-container ">
+                <li>
+                    <a class="cat-anchor" href="#section1">Small Plates</a>
+                </li>
+                <li>
+                    <a class="cat-anchor" href="#section2">Noodle Soups</a>
+                </li>
+                <li>
+                    <a class="cat-anchor" href="#section3">Salads</a>
+                </li>
+                <li>
+                    <a class="cat-anchor" href="#section4">Noodles</a>
+                </li>
+                <li>
+                    <a class="cat-anchor" href="#section5">Rice</a>
+                </li>
+                <li>
+                    <a class="cat-anchor" href="#section6">Side Dishes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-container my-container--remove">
+            <div class="menu-category" id="section1">
+                <h2 class="cat-header">Small Plates</h2>
+                <div class="grid-menu-items">
+                    <div class="menu-item menu-item--menu">
+                        <div class="menu-item__content">
+                            <h5>The Tiger Salad</h5>
+                            <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                            <span class="price price--menu">$5.99</span>
+                        </div>
+                        <div class="menu-item__image">
+                            <img src="img/food.png" alt="">
+                            <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                        </div>
+                    </div>
+                    <div class="menu-item menu-item--menu">
+                        <div class="menu-item__content">
+                            <h5>The Tiger Salad</h5>
+                            <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles, bean
+                                sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                            <span class="price price--menu">$5.99</span>
+                        </div>
+                        <div class="menu-item__image">
+                            <img src="img/food.png" alt="">
+                            <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                        </div>
+                    </div>
+                    <div class="menu-item menu-item--menu">
+                        <div class="menu-item__content">
+                            <h5>The Tiger Salad</h5>
+                            <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                            <span class="price price--menu">$5.99</span>
+                        </div>
+                        <div class="menu-item__image">
+                            <img src="img/food.png" alt="">
+                            <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                        </div>
+                    </div>
+                    <div class="menu-item menu-item--menu menu-item--menu--no-image">
+                        <div class="menu-item__content">
+                            <h5>The Tiger Salad</h5>
+                            <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles, bean
+                                sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                            <span class="price price--menu">$5.99</span>
+                            <a class="btn btn__menu-item-overlay btn__menu-item-overlay--no-image" href="">Add Item</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="section2">
+                    <h2 class="cat-header">Noodle Soups</h2>
+                    <div class="grid-menu-items">
+                        <div class="menu-item menu-item--menu">
+                            <div class="menu-item__content">
+                                <h5>The Tiger Salad</h5>
+                                <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                <span class="price price--menu">$5.99</span>
+                            </div>
+                            <div class="menu-item__image">
+                                <img src="img/food.png" alt="">
+                                <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                            </div>
+                        </div>
+                        <div class="menu-item menu-item--menu">
+                            <div class="menu-item__content">
+                                <h5>The Tiger Salad</h5>
+                                <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles,
+                                    bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                <span class="price price--menu">$5.99</span>
+                            </div>
+                            <div class="menu-item__image">
+                                <img src="img/food.png" alt="">
+                                <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                            </div>
+                        </div>
+                        <div class="menu-item menu-item--menu">
+                            <div class="menu-item__content">
+                                <h5>The Tiger Salad</h5>
+                                <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                <span class="price price--menu">$5.99</span>
+                            </div>
+                            <div class="menu-item__image">
+                                <img src="img/food.png" alt="">
+                                <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                            </div>
+                        </div>
+                        <div class="menu-item menu-item--menu">
+                            <div class="menu-item__content">
+                                <h5>The Tiger Salad</h5>
+                                <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles,
+                                    bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                <span class="price price--menu">$5.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-category" id="section3">
+                        <h2 class="cat-header">Salads</h2>
+                        <div class="grid-menu-items">
+                            <div class="menu-item menu-item--menu">
+                                <div class="menu-item__content">
+                                    <h5>The Tiger Salad</h5>
+                                    <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                    <span class="price price--menu">$5.99</span>
+                                </div>
+                                <div class="menu-item__image">
+                                    <img src="img/food.png" alt="">
+                                    <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--menu">
+                                <div class="menu-item__content">
+                                    <h5>The Tiger Salad</h5>
+                                    <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles,
+                                        bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                    <span class="price price--menu">$5.99</span>
+                                </div>
+                                <div class="menu-item__image">
+                                    <img src="img/food.png" alt="">
+                                    <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--menu">
+                                <div class="menu-item__content">
+                                    <h5>The Tiger Salad</h5>
+                                    <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                    <span class="price price--menu">$5.99</span>
+                                </div>
+                                <div class="menu-item__image">
+                                    <img src="img/food.png" alt="">
+                                    <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--menu">
+                                <div class="menu-item__content">
+                                    <h5>The Tiger Salad</h5>
+                                    <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat noodles,
+                                        bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                    <span class="price price--menu">$5.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-category" id="section4">
+                            <h2 class="cat-header">Noodles</h2>
+                            <div class="grid-menu-items">
+                                <div class="menu-item menu-item--menu">
+                                    <div class="menu-item__content">
+                                        <h5>The Tiger Salad</h5>
+                                        <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                        <span class="price price--menu">$5.99</span>
+                                    </div>
+                                    <div class="menu-item__image">
+                                        <img src="img/food.png" alt="">
+                                        <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item menu-item--menu">
+                                    <div class="menu-item__content">
+                                        <h5>The Tiger Salad</h5>
+                                        <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat
+                                            noodles, bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                        <span class="price price--menu">$5.99</span>
+                                    </div>
+                                    <div class="menu-item__image">
+                                        <img src="img/food.png" alt="">
+                                        <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item menu-item--menu">
+                                    <div class="menu-item__content">
+                                        <h5>The Tiger Salad</h5>
+                                        <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                                        <span class="price price--menu">$5.99</span>
+                                    </div>
+                                    <div class="menu-item__image">
+                                        <img src="img/food.png" alt="">
+                                        <a class="btn btn__menu-item-overlay" href="">Add Item</a>
+                                    </div>
+                                </div>
+                                <div class="menu-item menu-item--menu">
+                                    <div class="menu-item__content">
+                                        <h5>The Tiger Salad</h5>
+                                        <p class="subheader">Coconut curry stew, shrimp, chicken, fried tofu, wheat
+                                            noodles, bean sprouts, yow choy, fried shallots, hard-boiled egg</p>
+                                        <span class="price price--menu">$5.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    <div class="modal " id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <div class="modal__header__img">
+                        <img src="img/food.png" alt="">
+                    </div>
+                    <div class="header header--elevated">
+                        <h5>The Tiger Salad</h5>
+                        <p class="subheader">Wok-seared shiitake mushrooms, water chestnuts.</p>
+                    </div>
+                </div>
+                <div class="label-section label-section--border flex--h-center">
+                    <span class="label has-text-centered">Selects</span>
+                    <div class="select select--options select--large">
+                        <select>
+                            <option>Select dropdown</option>
+                            <option>Chicken</option>
+                            <option>Steak</option>
+                            <option>Beef</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="label-section">
+                    <div class="checkbox-container">
+                        <span class="label has-text-centered">CheckBox</span>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="label-section">
+                    <div class="radio-container">
+                        <span class="label has-text-centered">Radio Buttons</span>
+                        <label class="radio">
+                            <input type="radio" name="answer">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="answer">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="answer">
+                            Yes
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="answer">
+                            Yes
+                        </label>
+                    </div>
+                </div>
+                <div class="label-section">
+                    <div class="quantity">
+                        <span class="label has-text-centered">Quantity</span>
+                        <div class="plusminus horiz">
+                            <button>-</button>
+                            <input type="number" name="productQty" value="1" min="1" max="10">
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sticky-button sticky-button--modal">
+                    <button class="btn btn--cta">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <div class="cart is-flex">
+        <ul>
+            <div class="cart__header">
+                <h3>Your Cart</h3>
+                <div class="button-container button-container--cart-desktop">
+                    <a href="checkout.html" class="btn btn--cta btn--cta--cart-desktop">Place Order</a>
+                </div>
+            </div>
+            <div class="cart-contents">
+                <div class="menu-item menu-item--no-image menu-item--cart-desktop">
+                    <div class="menu-item__content">
+                        <h5>The Tiger Salad</h5>
+                        <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                    </div>
+                    <div class="menu-item__price">
+                        <span class="price">$5.99</span>
+                    </div>
+                    <div class="hidden-options">
+                        <div class="hidden-options__delete">
+                            <img src="img/icon-delete.png" alt="">
+                        </div>
+                        <div class="hidden-options__edit">
+                            <img src="img/edit-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item menu-item--no-image menu-item--cart-desktop">
+                    <div class="menu-item__content">
+                        <h5>The Tiger Salad</h5>
+                        <p class="subheader">wok-seared shiitake mush, water chestnuts.</p>
+                    </div>
+                    <div class="menu-item__price">
+                        <span class="price">$5.99</span>
+                    </div>
+                    <div class="hidden-options">
+                        <div class="hidden-options__delete">
+                            <img src="img/icon-delete.png" alt="">
+                        </div>
+                        <div class="hidden-options__edit">
+                            <img src="img/edit-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-totals">
+                <div class="order-totals__row order-totals__row--subheader">
+                    <span>Subtotal</span>
+                    <span>$32.65</span>
+                </div>
+                <div class="order-totals__row order-totals__row--subheader">
+                    <span>Tax</span>
+                    <span>$2.34</span>
+                </div>
+                <div class="order-totals__row order-totals__row--header border-top">
+                    <h5>Total</h5>
+                    <h5>$34.99</h5>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footer__item">
+            <img class="big-logo" src="img/grey-logo-large.png" alt="">
+        </div>
+        <div class="footer__item">
+            <a href="mailto:info@eathawkers.com">info@eathawkers.com</a>
+            <span class="footer__address">
+          845 N Garland Ave
+          Suite 100
+          Orlando, FL 32801
+        </span>
+            <div class="footer__social-media">
+                <span><img src="" alt=""></span>
+                <span><img src="" alt=""></span>
+                <span><img src="" alt=""></span>
+                <span><img src="" alt=""></span>
+            </div>
+        </div>
+        <div class="footer__item">
+            <h4>LINKS</h4>
+            <span>Menu</span>
+            <span>Locations</span>
+            <span>Careers</span>
+            <span>Contact</span>
+            <span>Merch</span>
+            <span>Girf Cards</span>
+        </div>
+        <div class="footer__item">
+            <h4>MORE</h4>
+            <span>Terms of Use</span>
+            <span>Privacy Policy</span>
+            <span>Site Map</span>
+            <span>Gift Card Balance</span>
+            <span>Media Assets</span>
+        </div>
+    </div>
+    <div class="tabbar">
+        <a class="active" href="index.html">
+            <span class="active">Menu</span>
+        </a>
+        <a href="cart.html">
+            <span>Cart</span>
+        </a>
+    </div>
+</div>
+<!-- <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered">Order Online</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <h1 class="title">
+      Hello World
+    </h1>
+    <p class="subtitle">
+      My first website with <strong>Bulma</strong>!
+    </p>
+  </div>
+</section> -->
+</body>
+
+</html>

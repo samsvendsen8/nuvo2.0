@@ -1,0 +1,61 @@
+.modal
+    z-index: $z-index-alpha
+    opacity: 0
+    visibility: hidden
+
+    &-content
+        background: $white 
+        overflow: auto
+        margin-bottom: $tabbar-height
+        transition: opacity $transition-duration-default ease-in-out, transform $transition-duration-default ease-in-out
+
+        @media only screen and (min-width: 960px)
+                width: 500px
+                margin: 20px auto
+
+        @media only screen and (max-width: 960px)
+            max-height: 100%
+            margin: 0
+
+    &__body 
+        background: $white
+        height: 100VH
+        width: 100%
+        margin-bottom: 72px
+
+    &__header
+        display: flex
+        flex-direction: column
+
+        img 
+                background-size: cover 
+                width: 100%
+
+.modal-background
+    transition: opactiy 2s ease-in-out
+
+
+.fade-in 
+    opacity: 1
+    visibility: visible
+    display: flex
+
+    .modal-background
+        animation: fade 500ms
+
+    .modal-content
+        animation: fade 500ms, animate-up 500ms
+
+@keyframes fade 
+    0% 
+        opacity: 0
+
+    100%
+        opacity: 1
+
+@keyframes animate-up
+    0% 
+        transform: translateY(-50px)
+
+    100%
+        transform: translateY(0px)

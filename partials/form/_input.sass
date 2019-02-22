@@ -1,0 +1,86 @@
+.input-custom
+    position: relative
+    display: inline-block
+    margin-bottom: $px-gutter-base-mobile
+
+    &--small 
+        flex: 100px 0 0
+
+    &--street-address
+        margin-right: 0px !important
+
+    &__field
+        border-radius: 2px
+        background: $background-grey
+        border: none
+        height: $input-height
+        padding: 17px 0px 0px 9px
+        float: right
+        width: 100%
+        font-size: 16px
+        border: 1px solid #e8e8e8
+
+        &--white
+            background: $white
+
+        &:focus
+            outline: none
+            transition: all, ease-in, $transition-duration-default
+
+        &:focus + label
+            transition: all, ease-in, $transition-duration-default
+            transform: translate3d(0, -15%, 0)
+            outline: none
+            color: $brand-orange
+            text-align: left
+            font:
+                size: 12px
+
+            &:after
+                top: 56px
+                opacity: 1
+
+    &__label
+        transition: all, ease-in, $transition-duration-default
+        transform: translate3d(0, 0, 0)
+        position: absolute
+        background: transparent
+        width: 100%
+        text-align: left
+        height: 50px
+        pointer-events: none
+        padding: 2px 0px
+        font:
+            size: 16px
+
+        &:after
+            content: ''
+            position: absolute
+            top: 50px
+            opacity: 0
+            left: 0
+            width: 100%
+            border-bottom: 2px solid $brand-orange
+
+    &__label-content
+        transition: all, ease-in, $transition-duration-default
+        padding: 13px 9px
+        display: block
+
+
+.input-filled + label
+    transition: all, ease-in, $transition-duration-default
+    transform: translate3d(0, -15%, 0)
+    outline: none
+    color: $subheader
+    text-align: left
+    font:
+        size: 12px
+
+.two-inputs 
+    display: grid 
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 20px
+
+    &--flex 
+        display: flex 
