@@ -30,23 +30,25 @@
 .btn
       border: none
       text-align: center
-      padding: 14px 20px
+      padding: 14px 30px
       font-size: 20px
       font-weight: 600
       font-family: "museo sans"
       cursor: pointer
 
+      &-disabled 
+            background: #d8d8d8
+            cursor: none
+
       &:hover
             color: $white
-            
-
 
       &__menu-item-overlay
             transition: transform $transition-duration-default ease-in-out, opacity $transition-duration-default ease-in-out
             position: absolute
             transform: translateY(150px)
             opacity: 0
-            background: $brand-orange
+            background: $primary-color
             color: $white
             border-radius: $border-radius-default
             padding: 8px 14px
@@ -58,15 +60,15 @@
             width: 100%
             padding: 0px
             display: flex 
-            background-color: $brand-orange
+            background-color: $primary-color
             color: $white 
             border-radius: 28px
             box-shadow: 0px -2px 20px 1px #00000014
 
       &--cta 
-            transition: transform $transition-duration-default ease-in-out, box-shadow $transition-duration-default ease-in-out
+            transition: transform $transition-duration-default ease-in-out, box-shadow $transition-duration-default ease-in-out, background-color $transition-duration-default ease-in-out
             width: 100%
-            background: $brand-orange
+            background: $primary-color
             transform: translateY(0)
             border-radius: 10px
             color: $white 
@@ -77,6 +79,13 @@
             &:hover 
                   transform: translateY(-2px)
                   box-shadow: 0px 24px 20px -20px #ff852099
+                  background-color: darken($primary-color, 5%)
+
+            &--light 
+                  background-color: $primary-color-light
+
+                  &:hover 
+                        background-color: darken($primary-color-light, 5%)
 
       &__price
             flex: 1

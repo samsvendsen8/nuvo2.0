@@ -52,7 +52,8 @@
     transform: translateY(0px); } }
 
 .navbar {
-  border-bottom: 1px solid #e8e8e8; }
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 1000; }
 
 .navbar-item img {
   max-height: 100%;
@@ -115,11 +116,14 @@
 .btn {
   border: none;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 30px;
   font-size: 20px;
   font-weight: 600;
   font-family: "museo sans";
   cursor: pointer; }
+  .btn-disabled {
+    background: #d8d8d8;
+    cursor: none; }
   .btn:hover {
     color: #FFFFFF; }
   .btn__menu-item-overlay {
@@ -143,7 +147,7 @@
     border-radius: 28px;
     box-shadow: 0px -2px 20px 1px #00000014; }
   .btn--cta {
-    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out, background-color 150ms ease-in-out;
     width: 100%;
     background: #f89622;
     transform: translateY(0);
@@ -153,7 +157,12 @@
       padding: 10px 20px; }
     .btn--cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0px 24px 20px -20px #ff852099; }
+      box-shadow: 0px 24px 20px -20px #ff852099;
+      background-color: #f78a09; }
+    .btn--cta--light {
+      background-color: #f9a94a; }
+      .btn--cta--light:hover {
+        background-color: #f89d31; }
   .btn__price {
     flex: 1;
     padding: 16px 20px;
@@ -424,6 +433,8 @@ img {
   @media only screen and (max-width: 960px) {
     .my-container--checkout {
       padding: 0; } }
+  .my-container--login {
+    max-width: 600px; }
 
 @media only screen and (max-width: 960px) {
   .cart-container {
@@ -874,11 +885,20 @@ img {
 .width--100 {
   width: 100%; }
 
+.width--80 {
+  width: 80%; }
+
 .margin-bottom-0 {
   margin-bottom: 0 !important; }
 
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
 .margin-right-20 {
   margin-right: 20px; }
+
+.padding-bottom-20 {
+  padding-bottom: 20px; }
 
 .border-bottom {
   border-bottom: 1px solid #F8F8F8; }
@@ -889,3 +909,6 @@ img {
 @media only screen and (max-width: 960px) {
   .has-text-centered--mobile {
     text-align: center; } }
+
+.display-flex {
+  display: flex; }

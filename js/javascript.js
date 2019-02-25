@@ -85,3 +85,7 @@ $(document).ready(function() {
         $(this).addClass('active-li');
     });
 });
+
+$(document).ready(function(){
+  $(".nav-placeholder").load("nav.html");
+});

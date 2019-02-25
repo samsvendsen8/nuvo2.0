@@ -281,11 +281,25 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/nav.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/nav.html",
+		"oF": 0
+		},
 	"/navbar.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/navbar.html",
+		"oF": 0
+		},
+	"/new-user.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/new-user.html",
 		"oF": 0
 		},
 	"/order-settings.html": {
