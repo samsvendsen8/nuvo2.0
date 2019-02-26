@@ -79,6 +79,7 @@ $(document).ready(function() {
         }
     });
 });
+
 $(document).ready(function() {
     $('.cat-anchor').click( function(){
         $('.cat-anchor').removeClass('active-li');

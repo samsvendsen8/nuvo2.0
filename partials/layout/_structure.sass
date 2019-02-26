@@ -24,8 +24,13 @@ img
             @media only screen and (max-width: 960px)
                   padding: 0
 
-      &--login 
-            max-width: 600px
+      &--new-user
+            max-width: 1200px
+            display: flex
+            align-items: flex-start
+
+            @media only screen and (max-width: 960px)
+                  flex-direction: column
 
 //Cart
 
@@ -360,6 +365,7 @@ img
             position: relative
             top: -160px
             z-index: $z-index-1
+
 .payment
       flex: 4
 
@@ -522,3 +528,24 @@ img
 
                         .menu-item__price
                               padding-top: 0px
+
+
+.group-item 
+      display: flex
+      justify-content: space-between
+      margin-bottom: 20px
+
+      &__name
+            flex: 2
+      
+      &__add
+            flex: 1
+
+      &__delete
+            height: 30px
+            max-width: 30px
+            background: $brand-red
+            padding: 5px
+            overflow: auto
+            border-radius: 4px
+            flex: 1

@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/addressBook.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/addressBook.html",
+		"oF": 0
+		},
 	"/app.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -45,6 +52,13 @@
 		"oAP": "/css/app-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/group-order-list.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/group-order-list.html",
+		"oF": 0
 		},
 	"/homepage.html": {
 		"cB": 0,
@@ -281,13 +295,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/nav.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/nav.html",
-		"oF": 0
-		},
 	"/navbar.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -307,6 +314,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/order-settings.html",
+		"oF": 0
+		},
+	"/orderHistory.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/orderHistory.html",
 		"oF": 0
 		},
 	"/partials/components/_modal.sass": {
@@ -464,6 +478,20 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/profile.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/profile.html",
+		"oF": 0
+		},
+	"/user-favorites.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/user-favorites.html",
+		"oF": 0
 		}
 	},
 "hooks": [
