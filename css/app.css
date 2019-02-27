@@ -326,7 +326,7 @@ h5 {
       transition: all, ease-in, 150ms;
       transform: translate3d(0, -15%, 0);
       outline: none;
-      color: #f89622;
+      color: #3892FC;
       text-align: left;
       font-size: 12px; }
       .input-custom__field:focus + label:after {
@@ -350,7 +350,7 @@ h5 {
       opacity: 0;
       left: 0;
       width: 100%;
-      border-bottom: 2px solid #f89622; }
+      border-bottom: 2px solid #3892FC; }
   .input-custom__label-content {
     transition: all, ease-in, 150ms;
     padding: 13px 9px;
@@ -440,9 +440,11 @@ img {
   @media only screen and (max-width: 960px) {
     .my-container--remove {
       padding: 0; } }
-  @media only screen and (max-width: 960px) {
-    .my-container--checkout {
-      padding: 0; } }
+  .my-container--checkout {
+    max-width: 1200px; }
+    @media only screen and (max-width: 960px) {
+      .my-container--checkout {
+        padding: 0; } }
   .my-container--new-user {
     max-width: 1200px;
     display: flex;
@@ -713,8 +715,7 @@ img {
 
 .checkout-content {
   display: inline-block;
-  width: 100%;
-  background: #FAFAFA; }
+  width: 100%; }
   @media only screen and (min-width: 960px) {
     .checkout-content {
       background: #FFFFFF;
@@ -872,6 +873,48 @@ img {
     border-radius: 4px;
     flex: 1; }
 
+.order-settings-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  @media only screen and (min-width: 960px) {
+    .order-settings-container {
+      position: relative;
+      top: -140px;
+      z-index: 999;
+      flex-direction: row; } }
+
+@media only screen and (min-width: 960px) {
+  .order-settings__1, .order-settings__2 {
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px #0000001c; } }
+
+.order-settings__1 {
+  flex: 1;
+  margin-right: 20px; }
+  @media only screen and (max-width: 960px) {
+    .order-settings__1 {
+      background-color: #f7f7f7;
+      padding: 20px;
+      margin-right: 0px; } }
+
+.order-settings__2 {
+  flex: 1; }
+
+.order-type-selection-dropdown {
+  display: none; }
+  @media only screen and (max-width: 960px) {
+    .order-type-selection-dropdown {
+      display: inline;
+      margin-bottom: 20px; } }
+
+.order-type-selection-btn {
+  display: inline; }
+  @media only screen and (max-width: 960px) {
+    .order-type-selection-btn {
+      display: none !important; } }
+
 .hero-unit {
   height: 175px;
   width: 100%;
@@ -950,3 +993,6 @@ img {
 
 .display-flex {
   display: flex; }
+
+.display-none {
+  display: none; }
