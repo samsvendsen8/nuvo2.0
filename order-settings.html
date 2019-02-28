@@ -29,9 +29,9 @@
             <div class="label-section label-section--border flex--h-center">
               <h3 class="has-text-centered margin-bottom-20">Choose your order type</h3>
               <div class="display-flex width--80 padding-bottom-20 order-type-selection-btn">
-                <div class="btn btn--cta btn--cta--light margin-right-20 flex-1">Takeout</div>
-                <div class="btn btn--cta btn--cta--light  margin-right-20 flex-1">Dine In</div>
-                <div class="btn btn--cta btn--cta--light  flex-1">Group Order</div>
+                <div class="btn-order-settings btn btn--cta btn--cta--light margin-right-20 flex-1">Takeout</div>
+                <div class="btn-order-settings btn btn--cta btn--cta--light  margin-right-20 flex-1">Dine In</div>
+                <div class="btn-order-settings btn btn--cta btn--cta--light  flex-1">Group Order</div>
               </div>
               <div class="order-type-selection-dropdown width--100">
                 <div class="select select--options select--large">
@@ -85,39 +85,39 @@
 
           <!--If they choose Delivery Enter address  -->
 
-          <div class="order-settings-container">
-            <div class="order-settings__1">
-              <h3 class="margin-bottom-20 ">Select the time for your order</h3>
-              <div class="radio-container margin-bottom-20">
-                <label class="radio">
-                  <input type="radio" name="answer">
-                  As soon as possible
-                  <span class="subheader">(approzimently 110minutes)</span>
-                </label>  
-                <label class="radio radio--selected">
-                  <input type="radio" name="answer">
-                  Later
-                </label>
+        <div class="order-settings-container display-none">
+          <div class="order-settings__1">
+            <h3 class="margin-bottom-20 ">Select the time for your order</h3>
+            <div class="radio-container margin-bottom-20">
+              <label class="radio">
+                <input type="radio" name="answer">
+                As soon as possible
+                <span class="subheader">(approzimently 110minutes)</span>
+              </label>  
+              <label class="radio radio--selected">
+                <input type="radio" name="answer">
+                Later
+              </label>
+            </div>
+            <div class="display-flex time-options">
+              <div class="select select--options select--large margin-right-20 flex-2">
+                <select type="time">
+                  <option>Date</option>
+                  <option>Chicken</option>
+                  <option>Steak</option>
+                  <option>Beef</option>
+                </select>
               </div>
-              <div class="display-flex time-options">
-                <div class="select select--options select--large margin-right-20 flex-2">
-                  <select type="time">
-                    <option>Date</option>
-                    <option>Chicken</option>
-                    <option>Steak</option>
-                    <option>Beef</option>
-                  </select>
-                </div>
-                <div class="select select--options select--large flex-2">
-                  <select>
-                    <option>Time</option>
-                    <option>Chicken</option>
-                    <option>Steak</option>
-                    <option>Beef</option>
-                  </select>
-                </div>
+              <div class="select select--options select--large flex-2">
+                <select>
+                  <option>Time</option>
+                  <option>Chicken</option>
+                  <option>Steak</option>
+                  <option>Beef</option>
+                </select>
               </div>
             </div>
+          </div>
 
           <div class="order-settings__2 white-bg-container white-bg-container--checkout white-bg-container--single-column">
             <h3 class="margin-bottom-20 ">Enter Address</h3>
@@ -215,10 +215,133 @@
             </span>
             <div class="btn btn--cta btn--cta--width-auto">Start Order</div>
           </div>
+        </div>
 
           <!--If they choose Group Order  -->
 
+        <div class="order-settings-container">
+          <div class="order-settings__1">
+            <h3 class="margin-bottom-20 ">Select the time for your order</h3>
+            <div class="radio-container margin-bottom-20">
+              <label class="radio">
+                <input type="radio" name="answer">
+                As soon as possible
+                <span class="subheader">(approzimently 110minutes)</span>
+              </label>  
+              <label class="radio radio--selected">
+                <input type="radio" name="answer">
+                Later
+              </label>
+            </div>
+            <div class="display-flex time-options">
+              <div class="select select--options select--large margin-right-20 flex-2">
+                <select type="time">
+                  <option>Date</option>
+                  <option>Chicken</option>
+                  <option>Steak</option>
+                  <option>Beef</option>
+                </select>
+              </div>
+              <div class="select select--options select--large flex-2">
+                <select>
+                  <option>Time</option>
+                  <option>Chicken</option>
+                  <option>Steak</option>
+                  <option>Beef</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="order-settings__2 white-bg-container white-bg-container--checkout white-bg-container--single-column">
+            <h3 class="margin-bottom-20 ">Order Details</h3>
+            <span class="input-custom">
+              <input type="text" class="input-custom__field" name="ccNumber">
+              <label for="ccNumber" class="input-custom__label">
+                <span class="input-custom__label-content">Contact Name</span>
+              </label>
+            </span>
+            <span class="input-custom">
+              <input type="text" class="input-custom__field" name="ccNumber">
+              <label for="ccNumber" class="input-custom__label">
+                <span class="input-custom__label-content">Group Order Name</span>
+              </label>
+            </span>
+            <span class="input-custom">
+              <input type="text" class="input-custom__field" name="ccNumber">
+              <label for="ccNumber" class="input-custom__label">
+                <span class="input-custom__label-content">Special Instructions</span>
+              </label>
+            </span>
+            <span class="subheader">How Would You Like To Recieve Your Order?</span>
+            <div class="radio-container margin-bottom-20">
+              <label class="radio">
+                <input type="radio" name="answer">
+                Takeout
+              </label>  
+              <label class="radio radio--selected">
+                <input type="radio" name="answer">
+                Delivery
+              </label>
+            </div>
+          </div>
         </div>
+        <div class="order-settings-container">
+            <div class="order-settings__1">
+              <h3 class="margin-bottom-20 ">Who is Paying?</h3>
+              <div class="radio-container margin-bottom-20">
+                <label class="radio">
+                  <input type="radio" name="answer">
+                  I am buying for everyone
+                </label>  
+                <label class="radio radio--selected margin-bottom-20">
+                  <input type="radio" name="answer">
+                  Everyone is buying their own.
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                   Order amount limit for each guest
+                </label>
+                <span class="input-custom">
+                  <input type="text" class="input-custom__field" name="ccNumber">
+                  <label for="ccNumber" class="input-custom__label">
+                    <span class="input-custom__label-content">Order Limit</span>
+                  </label>
+                </span>
+              </div>
+            </div>
+            <div class="order-settings__2 white-bg-container white-bg-container--checkout white-bg-container--single-column">
+              <h3 class="margin-bottom-20 ">Invite Friends</h3>
+              <span class="subheader">Invite new guests</span>
+              <div class="two-inputs">
+                <span class="input-custom ">
+                  <input type="text" class="input-custom__field" name="ccNumber">
+                  <label for="ccNumber" class="input-custom__label">
+                    <span class="input-custom__label-content">Name</span>
+                  </label>
+                </span>
+                <span class="input-custom">
+                  <input type="text" class="input-custom__field" name="ccNumber">
+                  <label for="ccNumber" class="input-custom__label">
+                    <span class="input-custom__label-content">Email</span>
+                  </label>
+                </span>
+              </div>
+              <label class="checkbox margin-bottom-20">
+                  <input type="checkbox">
+                 Save to address book
+              </label>
+              <div class="btn btn--cta btn--cta--width-auto margin-bottom-40">Invite Guest</div>
+              <h3 class="margin-bottom-20">Invited Guests</h3>
+              <div class="group-item">
+                <span class="subheader group-item__name">Sam Svendsen - sam.sven@gmail.com</span>
+                <span class="group-item__delete"><img src="img/icon-delete.png" alt=""></span>
+              </div>
+              <div class="group-item">
+                <span class="subheader group-item__name">Sam Svendsen - sam.sven@gmail.com</span>
+                <span class="group-item__delete"><img src="img/icon-delete.png" alt=""></span>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>

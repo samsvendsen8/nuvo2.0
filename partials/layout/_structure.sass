@@ -1,6 +1,7 @@
 body
       background: $white
       font-family: "museo sans"
+      margin: 0
 
 body, html 
       transition: all $transition-duration-default ease-in-out
@@ -277,12 +278,17 @@ img
                   margin-bottom: 72px
 
       &--cart-desktop
+            transition: opacity $transition-duration-default ease-in-out
             &:hover 
                   .hidden-options
                         transform: translateX(0px)
 
                   .menu-item__content, .menu-item__price
                         transform: translateX(-60px)
+
+                  .item-qty
+                        transition: opacity $transition-duration-default ease-in-out
+                        opacity: 1
       &__image 
             flex: 4
             height: 140px
@@ -557,6 +563,7 @@ img
             display: flex
             width: 100%
             flex-direction: column
+            margin-bottom: 20px
 
             @media only screen and (min-width: 960px)
                   position: relative
@@ -596,3 +603,21 @@ img
 
             @media only screen and (max-width: 960px)
                   display: none !important
+
+.plusminus
+      margin-bottom: 100px
+
+.item-qty
+      transition: opacity $transition-duration-default ease-in-out
+      background: #f7f7f7
+      border: none
+      padding: 7px 7px
+      border-radius: 4px
+      font-weight: 600
+      font-size: 14px
+      color: #737373
+      width: 36px
+      flex: 1
+      position: absolute
+      bottom: 9px
+      opacity: 0

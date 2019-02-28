@@ -90,3 +90,9 @@ $(document).ready(function() {
 $(document).ready(function(){
   $(".nav-placeholder").load("nav.html");
 });
+
+$(document).ready(function() {
+    $('.btn-order-settings').click(function() {
+        $(this).addClass('btn--active');
+    });
+});

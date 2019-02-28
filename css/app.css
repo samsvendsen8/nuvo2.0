@@ -78,14 +78,21 @@
     width: auto; }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -16px;
   height: auto;
-  margin-top: 9px; }
+  margin-top: 10px;
+  display: flex; }
+  @media only screen and (max-width: 1087px) {
+    .logo {
+      position: absolute;
+      margin-left: 15px; } }
   .logo img {
     height: 34px;
     width: 34px; }
+  .logo .rest-name {
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f89622; }
 
 .sticky-button {
   position: fixed;
@@ -182,6 +189,9 @@
       transform: translateY(-2px);
       box-shadow: 0px 24px 20px -20px #ff852099;
       color: #f89622; }
+
+.btn--active {
+  background: black; }
 
 .title {
   font-family: brothers, sans-serif; }
@@ -422,7 +432,8 @@ h5 {
 
 body {
   background: #FFFFFF;
-  font-family: "museo sans"; }
+  font-family: "museo sans";
+  margin: 0; }
 
 body, html {
   transition: all 150ms ease-in-out; }
@@ -650,10 +661,15 @@ img {
     border: none; }
     .menu-item--cart:last-of-type {
       margin-bottom: 72px; }
-  .menu-item--cart-desktop:hover .hidden-options {
-    transform: translateX(0px); }
-  .menu-item--cart-desktop:hover .menu-item__content, .menu-item--cart-desktop:hover .menu-item__price {
-    transform: translateX(-60px); }
+  .menu-item--cart-desktop {
+    transition: opacity 150ms ease-in-out; }
+    .menu-item--cart-desktop:hover .hidden-options {
+      transform: translateX(0px); }
+    .menu-item--cart-desktop:hover .menu-item__content, .menu-item--cart-desktop:hover .menu-item__price {
+      transform: translateX(-60px); }
+    .menu-item--cart-desktop:hover .item-qty {
+      transition: opacity 150ms ease-in-out;
+      opacity: 1; }
   .menu-item__image {
     flex: 4;
     height: 140px;
@@ -876,7 +892,8 @@ img {
 .order-settings-container {
   display: flex;
   width: 100%;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 20px; }
   @media only screen and (min-width: 960px) {
     .order-settings-container {
       position: relative;
@@ -914,6 +931,24 @@ img {
   @media only screen and (max-width: 960px) {
     .order-type-selection-btn {
       display: none !important; } }
+
+.plusminus {
+  margin-bottom: 100px; }
+
+.item-qty {
+  transition: opacity 150ms ease-in-out;
+  background: #f7f7f7;
+  border: none;
+  padding: 7px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #737373;
+  width: 36px;
+  flex: 1;
+  position: absolute;
+  bottom: 9px;
+  opacity: 0; }
 
 .hero-unit {
   height: 175px;
