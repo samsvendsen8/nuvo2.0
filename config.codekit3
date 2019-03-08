@@ -282,6 +282,13 @@
 		"oAP": "/locations.html",
 		"oF": 0
 		},
+	"/manage-group-order.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/manage-group-order.html",
+		"oF": 0
+		},
 	"/modules/_variables.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -295,13 +302,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/navbar.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/navbar.html",
-		"oF": 0
-		},
 	"/new-user.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -309,11 +309,25 @@
 		"oAP": "/new-user.html",
 		"oF": 0
 		},
+	"/order-complete.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/order-complete.html",
+		"oF": 0
+		},
 	"/order-settings.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/order-settings.html",
+		"oF": 0
+		},
+	"/orderHistory-view-all.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/orderHistory-view-all.html",
 		"oF": 0
 		},
 	"/orderHistory.html": {
@@ -491,6 +505,27 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/user-favorites.html",
+		"oF": 0
+		},
+	"/user-locations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/user-locations.html",
+		"oF": 0
+		},
+	"/user-saved-cards.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/user-saved-cards.html",
+		"oF": 0
+		},
+	"/user-vehicles.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/user-vehicles.html",
 		"oF": 0
 		}
 	},

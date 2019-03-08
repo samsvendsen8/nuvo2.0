@@ -7,6 +7,65 @@
             grid: 175px auto / 1fr
             grid-template-areas: "header" "products" "tabbar" 
 
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+
+
+      .grid-menu-items
+            display: flex 
+            flex-wrap: wrap
+
+      .menu-item--menu
+            width: calc(100% / 2 - 12px)
+
+            @media all and (max-width: 960px)
+                  width: 100%
+
+
+      .hero-unit
+            flex: 100%
+
+            @media all and (max-width: 960px)
+                  flex: 1
+      
+      .main-content-grid
+            flex: 0 1 70%
+
+            @media all and (max-width: 960px)
+                  flex: 1
+
+      .cart
+            width: 30%
+            
+      .footer
+            flex: 100%
+
+            @media all and (max-width: 960px)
+                  flex: 1
+
+      .checkout
+            flex: 0 1 70%
+
+            @media all and (max-width: 960px)
+                  flex: 1
+
+
+      .grid-container
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row 
+
+            @media all and (max-width: 960px)
+                  flex-direction: column
+
+      .grid-checkout
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row 
+
+            @media all and (max-width: 960px)
+                  flex-direction: column
+
 .grid-checkout
       grid: auto / repeat(5, 1fr)
       display: grid
@@ -20,8 +79,10 @@
       display: grid 
       grid-template-columns: 1fr 1fr
 
+
       @media only screen and (max-width: 960px)
             grid-template-columns: 1fr
+            
 
 .hero-unit
       grid-area: header
@@ -32,6 +93,7 @@
       @media only screen and (min-width: 960px)
             background: $body-grey
  
+      
 .checkout
       grid-area: checkout 
 

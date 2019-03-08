@@ -3,16 +3,27 @@
       width: 100%
       position: relative
 
+      &--order-complete
+            display: flex
+            flex-direction: column
+            height: 280px
+            align-items: center
+            padding-bottom: 50px
+            justify-content: center
+            background:
+                  size: cover
+                  image: url("/images/theme/ng2019/hero-image-desktop.png")
+
       &--checkout
             background:
                   size: cover
-                  image: url('../img/map.png')
+                  image: url('../img/hero-image-desktop.png')
 
       &--cart
             clip-path: ellipse(100% 87% at 50% 10%)
             background:
                   size: cover
-                  image: url('../img/hero-image.png')
+                  image: url("/images/theme/ng2019/hero-image-desktop.png")
 
       &--menu
             display: flex
@@ -26,9 +37,9 @@
                   height: 175px
                   background:
                         size: cover
-                        image: url('../img/hero-image.png')
+                        image: url('../img/hero-image-desktop.png')
 
-      &--menu, &--cart 
+      &--menu, &--cart, &--order-complete
             &:after
                   background-color: $white
                   opacity: .3
@@ -37,3 +48,5 @@
                   width: 100%
                   position: absolute
                   top: 0px
+
+            

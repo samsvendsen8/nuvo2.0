@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jze1edm.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <!-- <div class="back-btn">
+          <a href="index.html">
+            <img src="img/back-arrow.png" alt="">
+          </a>
+        </div> -->
+        <a class="logo"> 
+          <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="32" height="32">
+          <span class="rest-name">Hawkers</span>
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-default">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar-default" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item is-hoverable">
+            <a href="" class="nabar-link">Menu</a>
+            <div class="navbar-dropdown">
+              <a href="" class="navbar-item">
+                  Dining Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Beverage Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Catering Menu
+                </a>
+              <a href="" class="navbar-item">
+                  Happy Hour Menu
+                </a>
+            </div>
+          </div>
+          <div class="navbar-item is-hoverable">
+            <a href="" class="nabar-link">Sam Svendsen</a>
+            <div class="navbar-dropdown">
+              <a href="profile.html" class="navbar-item">
+                  My Profile
+                </a>
+              <a href="user-favorites.html" class="navbar-item">
+                  My Saved orders
+                </a>
+              <a href="addressBook.html" class="navbar-item">
+                  My Contacts
+                </a>
+              <a href="group-order-list.html" class="navbar-item">
+                  My Group Orders
+                </a>
+              <a href="orderHistory.html" class="navbar-item">
+                  My Order History
+                </a>
+              <a href="" class="navbar-item">
+                  Logout
+                </a>
+            </div>
+          </div>
+          <a class="navbar-item">Our Story</a>
+          <a class="navbar-item">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="order-complete">  
+    <div class="hero-unit hero-unit--order-complete">
+      <h1 class="has-text-centered display-block">Congrats, your order has been placed!</h1>
+      <span class="subheader subheader--confirm">Sit tight while we prepare you order.</span>
+    </div>
+    <div class="order-complete__content">
+      <div class="order-complete__icon"></div>
+      <h6 class="has-text-centered margin-top-20">
+          Your order number is <span class="color-bold">1903051443173930</span>. An email will
+          be sent confirming your order. You may also print this page.
+      </h6>
+      <div class="order-complete__review margin-top-20">
+        <div class="white-bg-container--checkout white-bg-container--single-column ">
+          <span class="label label--checkout has-text-centered--mobile ">Order Summery</span>
+          <div class="group-item">
+            <span class="bold group-item__name">Item Name</span>
+            <span class="bold group-item__name">Qty</span>
+            <span class="bold group-item__name">Item Price</span>
+            <span class="bold group-item__name">Item Total</span>
+          </div>
+          <div class="group-item">
+            <span class="subheader group-item__name">French Fries</span>
+            <span class="subheader group-item__name">1</span>
+            <span class="subheader group-item__name">$4.00</span>
+            <span class="subheader group-item__name">$4.00</span>
+          </div>
+          <div class="group-item">
+            <span class="subheader group-item__name">French Fries</span>
+            <span class="subheader group-item__name">1</span>
+            <span class="subheader group-item__name">$4.00</span>
+            <span class="subheader group-item__name">$4.00</span>
+          </div>
+          <div class="group-item">
+            <span class="subheader group-item__name">French Fries</span>
+            <span class="subheader group-item__name">1</span>
+            <span class="subheader group-item__name">$4.00</span>
+            <span class="subheader group-item__name">$4.00</span>
+          </div>
+          <div class="order-totals order-totals--right margin-top-20">
+            <div class="order-totals__row order-totals__row--subheader">
+              <span>Order Sub Total</span>
+              <span>$4.00</span>
+            </div>
+            <div class="order-totals__row order-totals__row--subheader">
+              <span>Order Tax @ 8 %</span>
+              <span>$32.65</span>
+            </div>
+            <div class="order-totals__row order-totals__row--subheader">
+              <span>Order Service Charge</span>
+              <span>$32.65</span>
+            </div>
+            <div class="order-totals__row order-totals__row--subheader">
+              <span>Order Total</span>
+              <span>$2.34</span>
+            </div>
+            <div class="order-totals__row order-totals__row--header border-top">
+              <h5>Total</h5>
+              <h5>$34.99</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-confirmation__extra has-text-centered margin-top-20">
+        <p>
+          Your order will be ready for pickup
+          on 03-05-2019 at approximately 02:00 PM
+          </p>
+          <p>
+            If you need to make any changes to your order please call <strong>Mint Cafe
+                - <span class="js-us-phone"> (608) 960-4535</span></strong>
+          </p>
+          <a class="btn btn-success btn-barista-custom" href="javascript:window.print()">Print Order</a>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

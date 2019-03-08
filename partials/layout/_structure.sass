@@ -1,6 +1,6 @@
 body
       background: $white
-      font-family: "museo sans"
+      font-family: 'Roboto', sans-serif;
       margin: 0
 
 body, html 
@@ -61,6 +61,9 @@ img
       @media only screen and (max-width: 960px)
             display: none !important
 
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+            min-width: 0px
+
       &__header
             padding: $px-gutter-large-mobile
             text-align: center
@@ -73,8 +76,39 @@ img
             height: 100vh
             top: 0
 
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+                  position: fixed
+
       ul 
             width: 100%
+
+.show-mobile-cart
+      display: inline !important
+      height: 100vh
+      width: 100vw
+      position: fixed
+      top: 0px
+      z-index: 9999
+
+      div
+            .cart-contents
+                  .menu-item
+                        &:hover
+                              .menu-item__price
+                                    transform: translateX(0px)
+
+                              .menu-item__content
+                                    transform: translateX(0px)
+
+                        .hidden-options
+                              transform: translateX(0px)
+                              position: relative
+                              height: auto
+
+                        &__price 
+                              .item-gty
+                                    opacity: 1
+
             
 //Tabbar
 
@@ -87,7 +121,7 @@ img
       height: $tabbar-height
       width: 100%
       display: flex
-      box-shadow: 0px -2px 20px 1px #00000014
+      box-shadow: 0px -2px 20px 1px rgba(0,0,0, .08)
 
       @media only screen and (min-width: 960px)
             display: none !important
@@ -131,11 +165,14 @@ img
             position: -webkit-sticky
             top: 0
             z-index: $z-index-1
-            box-shadow: 0px 2px 20px 1px #00000014
+            box-shadow: 0px -2px 20px 1px rgba(0,0,0, .08)
+
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+                  position: fixed
 
       @media only screen and (max-width: 960px)
             border-top: $border-default
-            box-shadow: 0px 2px 20px 1px #00000014
+            box-shadow: 0px -2px 20px 1px rgba(0,0,0, .08)
 
       ul 
             li 
@@ -152,6 +189,9 @@ img
 
                         &:hover 
                               opacity: 1
+
+                  &:last-of-type
+                        padding-right: 20px
 
             @media only screen and (max-width: 960px)
                   li 
@@ -181,6 +221,13 @@ img
       position: relative
       border-top: $border-light
       cursor: pointer
+
+      &--edit-mode
+            max-width: 500px
+            margin: 0 auto
+            border: 1px solid #e8e8e8
+            background: white
+            box-shadow: $box-shadow-default
 
       &:last-of-type
             border-bottom: $border-light
@@ -215,7 +262,7 @@ img
                         margin-right: 20px
 
                   &:hover 
-                        box-shadow: 0px 7px 17px #00000030
+                        box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.18)
                         transform: translateY(-1px)
 
                         .menu-item__image
@@ -271,7 +318,7 @@ img
             border-radius: 14px
             margin-bottom: $px-gutter-base-mobile
             margin-bottom: $px-gutter-base-mobile
-            box-shadow: 0px -2px 20px 1px #00000014
+            box-shadow: 0px -2px 20px 1px rgba(0,0,0, .08)
             border: none
 
             &:last-of-type
@@ -360,7 +407,7 @@ img
       padding: $px-gutter-base-mobile $px-gutter-large-mobile
 
       &--elevated
-            box-shadow: 0px 2px 20px 1px #00000014
+            box-shadow: 0px -2px 20px 1px rgba(0,0,0, .08)
 
 .checkout-content
       display: inline-block
@@ -438,6 +485,11 @@ img
       background: $white
       padding: $px-gutter-base-mobile
       border-top: $border-light
+      
+      &--right 
+            max-width: 400px
+            position: relative
+            background: #f7f7f7
 
       &__row
             display: flex
@@ -530,10 +582,6 @@ img
                   &:first-of-type
                         min-height: 0px
 
-                        .menu-item__content
-                              min-height: 0px
-                              padding-top: 0px
-
                         .menu-item__price
                               padding-top: 0px
 
@@ -545,9 +593,19 @@ img
 
       &__name
             flex: 2
+            margin-right: 20px
+            word-break: break-all
+
+            span 
+                  display: block
+                  margin-bottom: 10px
       
-      &__add
+      &__add, &__qty, &__price
             flex: 1
+
+      &__qty
+
+      &__price
 
       &__delete
             height: 30px
@@ -557,6 +615,16 @@ img
             overflow: auto
             border-radius: 4px
             flex: 1
+
+      &--footer 
+            justify-content: flex-end
+            margin-bottom: 0px
+
+      &-container
+            background: #f7f7f7
+            padding: 20px
+            margin-bottom: 20px
+            border-radius: 4px
 
 .order-settings
       &-container
@@ -606,6 +674,18 @@ img
 
 .plusminus
       margin-bottom: 100px
+      display: flex 
+      justify-content: center
+      font-size: 20px
+
+      input 
+            padding: 10px 0px 10px 12px
+            background: #fbfbfb
+            display: flex
+            font-size: 16px
+            font-weight: 600
+            color: $primary-color
+            border: 1px solid #e8e8e8
 
 .item-qty
       transition: opacity $transition-duration-default ease-in-out
@@ -621,3 +701,44 @@ img
       position: absolute
       bottom: 9px
       opacity: 0
+
+.tip-container
+      @media only screen and (max-width: 960px)
+            padding: 16px
+
+.order-complete
+      &__icon
+            position: relative
+            left: 50%
+            margin-left: -50px
+            margin-top: -50px
+            background: #1EDF94
+            height: 100px
+            width: 100px
+            border-radius: 999px
+            border: 6px solid #fff
+
+            &:before
+                  content: ''
+                  width: 40px
+                  height: 20px
+                  position: absolute
+                  top: 30px
+                  left: 26px
+                  border: 8px solid #fff
+                  border-top: none
+                  border-right: none
+                  background: transparent
+                  -webkit-transform: rotate(-45deg)
+                  -ms-transform: rotate(-45deg)
+                  transform: rotate(-45deg)
+
+      &__review
+            max-width: 600px
+            margin: 0 auto
+            padding: 40px
+            background: #fbfbfb
+
+.time-options
+      @media only screen and (max-width: 960px)
+            flex-direction: column
