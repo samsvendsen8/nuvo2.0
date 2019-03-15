@@ -12,6 +12,9 @@
             @media only screen and (min-width: 960px)
                   width: 500px
 
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+            position: fixed
+
 .button-container
       padding: $px-gutter-base-mobile
       display: flex
@@ -107,11 +110,13 @@
             transition: transform $transition-duration-default ease-in-out, box-shadow $transition-duration-default ease-in-out, background-color $transition-duration-default ease-in-out
             border: 2px solid $primary-color
             color: $primary-color
+            
 
             &:hover 
                   transform: translateY(-2px)
+                  background: $primary-color
                   box-shadow: 0px 24px 20px -20px rgba(255, 133, 32, .88)
-                  color: $primary-color
+                  color: $white
 
 .btn--active
       background-color: darken($primary-color, 10%)

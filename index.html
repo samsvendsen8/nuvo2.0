@@ -16,7 +16,11 @@
 </head>
 
 <body>
-
+        <div data-notify="container" class="col-xs-11 col-md-11 col-sm-11 col-lg-11 alert alert-{0}" role="alert">
+                '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>
+                '<span data-notify="icon">{1}</i> </span>
+                '<span data-notify="message">jfkl dsajkf dsaj f;dsajf kd;saj f;dsal</span>
+                '</div>'
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
@@ -158,8 +162,29 @@
         </div>
         <div class="my-container my-container--remove">
             <div class="menu-category" id="section1">
-                <h2 class="cat-header">Small Plates</h2>
-                <span class="subheader cat-subheader">Long text blah fdjsak fdkslaj fdkls jfdklsa fjdksla jfdklsa fdklsa fdsa</span>
+                <div class="cat-container">
+                    <div class="cat-image">
+                        <div class="cat-content">
+                            <h2>Small Plates</h2>
+                            <span class="subheade">Long text blah fdjsak fdkslaj fdkls jfdklsa fjdksla jfdklsa fdklsa fdsa</span>
+                        </div>
+                        <div class="circle-plus opened  circle-desktop">
+                            <div class="circle">
+                                <div class="horizontal"></div>
+                                <div class="vertical"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-line">
+                        <h2 class="cat-header cat-image-h2">Small Plates</h2>
+                        <div class="down-arrow"></div>
+                    </div>
+                    <span class="subheader cat-subheader cat-image-span">Long text blah fdjsak fdkslaj fdkls jfdklsa fjdksla jfdklsa fdklsa fdsa</span>
+                </div>
+                <div class="cat-default display-none">
+                    <h2 class="cat-header">Small Plates</h2>
+                    <span class="subheader cat-subheader">Long text blah fdjsak fdkslaj fdkls jfdklsa fjdksla jfdklsa fdklsa fdsa</span>
+                </div>
                 <div class="grid-menu-items">
                     <div class="menu-item menu-item--menu">
                         <div class="menu-item__content">
@@ -206,7 +231,18 @@
                     </div>
                 </div>
                 <div class="menu-category" id="section2">
-                    <h2 class="cat-header">Noodle Soups</h2>
+                    <div class="cat-default ">
+                        <div class="cat-default--content">
+                            <h2 class="cat-header">Small Plates</h2>
+                            <span class="subheader cat-subheader">Long text blah fdjsak fdkslaj fdkls jfdklsa fjdksla jfdklsa fdklsa fdsa</span>
+                        </div>
+                        <div class="circle-plus circle-desktop opened">
+                            <div class="circle">
+                                <div class="horizontal"></div>
+                                <div class="vertical"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="grid-menu-items">
                         <div class="menu-item menu-item--menu">
                             <div class="menu-item__content">

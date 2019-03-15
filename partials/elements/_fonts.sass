@@ -8,6 +8,9 @@ h1
       text-shadow: 1px 1px 1px black
       font-family: 'Roboto Slab', serif
 
+      @media only screen and (max-width: 960px)
+            font-size: 36px
+
 h2 
       font-size: 26px
       font-family: 'Roboto Slab', serif
@@ -37,6 +40,7 @@ h5
 h6 
       color: $header-dark
       font-size: 16px
+      padding: 0px 16px
 
 .price
       font-size: 14px
@@ -75,18 +79,13 @@ h6
       text-decoration: underline
 
 .cat-header
-      @media only screen and (min-width: 960px)
-            margin-top: 56px
 
       @media only screen and (max-width: 960px)
             text-align: center
-            padding: 35px 0px 0px 0
             background: $white
 
 .cat-subheader
       display: block
-      @media only screen and (min-width: 960px)
-            margin-bottom: 24px
 
       @media only screen and (max-width: 960px)
             text-align: center
