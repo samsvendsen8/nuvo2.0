@@ -36,6 +36,13 @@
 		"oAP": "/cart.html",
 		"oF": 0
 		},
+	"/change-locations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/change-locations.html",
+		"oF": 0
+		},
 	"/checkout.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -245,6 +252,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/my-map.png": {
+		"ft": 32768,
+		"iS": 1403991,
+		"oA": 0,
+		"oAP": "/img/my-map.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

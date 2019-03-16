@@ -36,6 +36,12 @@ img
             @media only screen and (max-width: 960px)
                   flex-direction: column
 
+      &--maps
+            max-width: 1200px
+            display: flex 
+            justify-content: center
+            align-items: center
+
 //Cart
 
 .cart-container
@@ -111,21 +117,13 @@ img
 
 .order-summary-container
       .menu-item
-            &:hover
-                  .menu-item__price
-                        transform: translateX(0px)
-
-                  .menu-item__content
-                        transform: translateX(0px)
 
             .hidden-options
-                  transform: translateX(0px)
-                  position: relative
-                  height: auto
+                  display: none
 
             &__price 
-                  .item-gty
-                        opacity: 1
+                  .item-qty
+                        display: none
 
 //Tabbar
 
@@ -841,3 +839,30 @@ img
 
 .grid-menu-items-collapse
       display: none 
+
+.search
+      display: flex
+      margin-top: 40px
+      margin-bottom: 40px
+      width: 80%
+      
+.map-section
+      display: flex 
+
+      &__labels
+            flex: 2
+            margin-right: 20px
+
+      &__map 
+            flex: 4
+            
+      &__info 
+            display: flex 
+            margin-bottom: 40px
+
+            .map-content
+                  display: flex 
+                  flex-direction: column
+                  
+                  span 
+                        margin-bottom: 10px 
